@@ -1,0 +1,87 @@
+.add-bss {
+  margin-bottom: 5rem;
+  .card {
+    width: 100%;
+    max-width: 900px;
+    padding: 1rem;
+  }
+  form {
+    input[type="text"],
+    input[type="number"],
+    input[type="file"],
+    input[type="email"],
+    select,
+    input[type="password"] {
+      //   display: block;
+      font-size: 1.6rem;
+      font-weight: 300;
+      width: 100%;
+      border-radius: 3px;
+      outline: none;
+    }
+  }
+}
+
+.group {
+  border: 1px solid var(--dark-blue);
+  padding: 5px;
+}
+.inputs_ctr_fullwidth {
+  padding: 15px 20px;
+}
+.inputCtr {
+    width: 75%;
+    margin: auto;
+    .card {
+        width: 100%;
+        max-width: 900px;
+        padding: 1rem;
+      }
+      form {
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        input[type="email"]{
+          //   display: block;
+          font-size: 1.8rem;
+          font-weight: 300;
+          width: 100%;
+          border-radius: 3px;
+          outline: none;
+        }
+      }
+    
+  }
+  .inputs_ctr {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .inpts_center {
+    flex: 1;
+  }
+  .inpts_on_left {
+    flex: 1;
+  }
+  .inpts_on_right {
+    flex: 1;
+  }
+
+
+  @media screen and (max-width: 1024px) {
+    .inputCtr {
+      width: 100%;
+      margin: auto;
+    }
+    .inputs_ctr {
+      flex-direction: column;
+    }
+    .--mt{
+    margin: 1rem;
+    font-size: 20px;
+
+    }
+  }
