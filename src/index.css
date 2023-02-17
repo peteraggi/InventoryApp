@@ -237,7 +237,8 @@ section {
     margin-bottom: 1rem;
   }
   .--mt {
-    margin: 1rem 0 0 14rem;
+    margin: 1rem 0 1rem 1rem;
+    font-weight: 600;
   }
 
 
@@ -497,6 +498,63 @@ section {
     background-color: var(--light-blue);
     height: 100%;
   }
+  .table_card_ctr {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 100% auto;
+  }
+  .card {
+    margin-top: 10px;
+    height: fit-content;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 20%), 0 2px 6px 2px rgb(60 64 67 / 10%);
+  }
+  .card-header,
+  .card-body {
+    padding: 1rem;
+  }
+  .card-body table tr td {
+    padding: 15px;
+  }
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #dedddd;
+  }
+  .card-header button {
+    background: var(--main-color);
+    border-radius: 5px;
+    color: #fff;
+    padding: 0.5rem 1rem;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  thead tr {
+    border-top: 1px solid #dedddd;
+    border-bottom: 1px solid #dedddd;
+  }
+  
+  thead tr {
+    border-top: 1px solid #dedddd;
+    border-bottom: 1px solid #dedddd;
+  }
+  thead td {
+    font-weight: 700;
+  }
+  
+  .tr-border > tr {
+    border-bottom: 1px solid #dedddd;
+  }
+  td {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #222;
+    white-space: nowrap;
+  }
+  
   
   
 

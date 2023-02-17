@@ -30,7 +30,7 @@ const Login = () => {
       _fcontent[key] = value;
     });
     let api = new FormsApi();
-    let res = await api.post("/user", _fcontent);
+    let res = await api.post("/login", _fcontent);
     if (res === "Error") {
       setApiFeedBackError(true);
       setSubmit(false);
@@ -49,7 +49,8 @@ const Login = () => {
         sessionStorage.setItem("token", data);
         setSubmit(false);
       }
-      nav(0);
+      window.location.replace("/");
+
     }
   };
   // if (user) return <Home />;

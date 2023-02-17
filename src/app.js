@@ -8,6 +8,8 @@ import Register from "./pages/auth/Register";
 import Dashboard from "./pages/dashboard/Dashboard";
 import Home from "./pages/Home/Home";
 import Business from "./pages/Business";
+import Businesses from "./pages/Businesses";
+import DashboardOne from "./pages/dashboard/DashboardOne";
 
 function App() {
   return (
@@ -17,18 +19,42 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/new-business" element={
-            <Sidebar>
-            <Layout>
-            <Business />
-            </Layout>
-          </Sidebar>} />
         <Route
-          path="/dashboard"
+          path="/businesses"
+          element={
+            <Sidebar>
+              <Layout>
+                <Businesses />
+              </Layout>
+            </Sidebar>
+          }
+        />
+        <Route
+          path="/new-business"
+          element={
+            <Sidebar>
+              <Layout>
+                <Business />
+              </Layout>
+            </Sidebar>
+          }
+        />
+        <Route
+          path="/dashboard/:id"
           element={
             <Sidebar>
               <Layout>
                 <Dashboard />
+              </Layout>
+            </Sidebar>
+          }
+        />
+          <Route
+          path="/dashboard"
+          element={
+            <Sidebar>
+              <Layout>
+                <DashboardOne />
               </Layout>
             </Sidebar>
           }

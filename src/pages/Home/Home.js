@@ -6,6 +6,8 @@ import heroImg from "../../assets/inv-img.png";
 import user from "../../app.config";
 
 const Home = () => {
+
+  console.log(user);
   return (
     <div className="home">
       <nav className="container --flex-between ">
